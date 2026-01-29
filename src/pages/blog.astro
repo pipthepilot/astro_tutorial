@@ -1,5 +1,8 @@
 ---
+import '../styles/global.css';
 
+import Navigation from '../components/navigation.astro';
+import Footer from '../components/footer.astro';
 ---
 
 <html lang="en">
@@ -13,9 +16,7 @@
 	</head>
 	<body>
         <!-- Navigation as a list  -->
-        <a href="/">Go to Home Page</a>
-        <a href="/about">Go to About Page</a>
-        <a href="/blog">Go to Blog Page</a>
+        <Navigation />
 		
         <h1>Blog</h1>
 		<p>I even have a blog page!</p>
@@ -25,5 +26,6 @@
             <li><a href="/posts/post-2/">Post 2</a></li>
             <li><a href="/posts/post-3/">Post 3</a></li>
         </ul>
+    <Footer />
 	</body>
 </html>
